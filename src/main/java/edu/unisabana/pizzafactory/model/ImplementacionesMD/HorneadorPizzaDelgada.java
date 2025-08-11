@@ -1,6 +1,6 @@
+package edu.unisabana.pizzafactory.model.ImplementacionesMD;
 
-
-import edu.unisabana.pizzafactory.model.interfaces.Horneador;
+import edu.unisabana.pizzafactory.model.Interfaces.Horneador;
 
 public class HorneadorPizzaDelgada implements Horneador {
 

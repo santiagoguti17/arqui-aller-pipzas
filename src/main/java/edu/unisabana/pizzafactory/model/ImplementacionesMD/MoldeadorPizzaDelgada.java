@@ -1,6 +1,6 @@
+package edu.unisabana.pizzafactory.model.ImplementacionesMD;
 
-
-import edu.unisabana.pizzafactory.model.interfaces.Moldeador;
+import edu.unisabana.pizzafactory.model.Interfaces.Moldeador;
 
 public class MoldeadorPizzaDelgada implements Moldeador {
 
