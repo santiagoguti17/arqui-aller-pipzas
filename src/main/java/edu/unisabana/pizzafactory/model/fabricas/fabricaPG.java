@@ -1,27 +1,27 @@
 package edu.unisabana.pizzafactory.model.Fabricas;
 
-import edu.unisabana.pizzafactory.model.interfaces.Amasador;
-import edu.unisabana.pizzafactory.model.interfaces.Moldeador;
-import edu.unisabana.pizzafactory.model.interfaces.Horneador;
-import edu.unisabana.pizzafactory.model.implementacionesMG.amasadorPG;
-import edu.unisabana.pizzafactory.model.implementacionesMG.moldeadorPG;
-import edu.unisabana.pizzafactory.model.implementacionesMG.horneadorPG;
-import edu.unisabana.pizzafactory.model.interfazdefabricaabs.fabricaPizza;
+import edu.unisabana.pizzafactory.model.Interfaces.Amasador;
+import edu.unisabana.pizzafactory.model.Interfaces.Moldeador;
+import edu.unisabana.pizzafactory.model.Interfaces.Horneador;
+import edu.unisabana.pizzafactory.model.ImplementacionesMG.AmasadorPG;
+import edu.unisabana.pizzafactory.model.ImplementacionesMG.MoldeadorPG;
+import edu.unisabana.pizzafactory.model.ImplementacionesMG.HorneadorPG;
+import edu.unisabana.pizzafactory.model.Interfaces.FabricaPizza;
 
-public class FabricaPG implements fabricaPizza {
+public class FabricaPG implements FabricaPizza {
 
     @Override
     public Amasador crearAmasador() {
-        return new amasadorPG();
+        return new AmasadorPG();
     }
 
     @Override
     public Moldeador crearMoldeador() {
-        return new moldeadorPG();
+        return new MoldeadorPG();
     }
 
     @Override
     public Horneador crearHorneador() {
-        return new horneadorPG();
+        return new HorneadorPG();
     }
 }
