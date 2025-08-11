@@ -13,4 +13,9 @@ public class MoldeadorPizzaDelgada implements Moldeador {
     public void moldearPizzaPequena() {
         System.out.println("Moldeando pizza pequeña de masa delgada...");
     }
+
+    @Override
+    public void moldearPizzaGrande() {
+        System.out.println("Moldeando pizza grande de masa delgada...");
+    }
 }
