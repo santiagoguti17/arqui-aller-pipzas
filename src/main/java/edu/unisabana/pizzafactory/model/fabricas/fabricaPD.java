@@ -1,12 +1,12 @@
-package edu.unisabana.pizzafactory.model.fabricas;
+package edu.unisabana.pizzafactory.model.Fabricas;
 
+import edu.unisabana.pizzafactory.model.ImplementacionesMD.AmasadorPizzaDelgada;
+import edu.unisabana.pizzafactory.model.ImplementacionesMD.MoldeadorPizzaDelgada;
+import edu.unisabana.pizzafactory.model.ImplementacionesMD.HorneadorPizzaDelgada;
 import edu.unisabana.pizzafactory.model.Interfaces.Amasador;
-import edu.unisabana.pizzafactory.model.Interfaces.Moldeador;
 import edu.unisabana.pizzafactory.model.Interfaces.Horneador;
-import edu.unisabana.pizzafactory.model.implementacionesmd.AmasadorPizzaDelgada;
-import edu.unisabana.pizzafactory.model.implementacionesmd.MoldeadorPizzaDelgada;
-import edu.unisabana.pizzafactory.model.implementacionesmd.HorneadorPizzaDelgada;
-import edu.unisabana.pizzafactory.model.interfazdefabricaabs.FabricaPizza;
+import edu.unisabana.pizzafactory.model.Interfaces.Moldeador;
+import edu.unisabana.pizzafactory.model.Interfaces.FabricaPizza;
 
 public class FabricaPD implements FabricaPizza {
 

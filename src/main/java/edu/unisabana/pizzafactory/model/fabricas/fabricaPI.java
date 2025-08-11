@@ -6,9 +6,9 @@ import edu.unisabana.pizzafactory.model.interfaces.Horneador;
 import edu.unisabana.pizzafactory.model.implementacionesMI.amasadorPI;
 import edu.unisabana.pizzafactory.model.implementacionesMI.moldeadorPI;
 import edu.unisabana.pizzafactory.model.implementacionesMI.horneadorPI;
-import edu.unisabana.pizzafactory.model.interfazdefabricaabs.fabricaPizza;
+import edu.unisabana.pizzafactory.model.Fabricas.FabricaPizza;
 
-public class FabricaPI implements fabricaPizza {
+public class FabricaPI implements FabricaPizza {
 
     @Override
     public Amasador crearAmasador() {

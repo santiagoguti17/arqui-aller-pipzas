@@ -3,10 +3,10 @@ package edu.unisabana.pizzafactory.consoleview;
 import edu.unisabana.pizzafactory.model.ExcepcionParametrosInvalidos;
 import edu.unisabana.pizzafactory.model.Ingrediente;
 import edu.unisabana.pizzafactory.model.Tamano;
+import edu.unisabana.pizzafactory.model.Interfaces.FabricaPizza;
 import edu.unisabana.pizzafactory.model.Interfaces.Amasador;
-import edu.unisabana.pizzafactory.model.Interfaces.Moldeador;
 import edu.unisabana.pizzafactory.model.Interfaces.Horneador;
-import edu.unisabana.pizzafactory.model.Interfazdefabricaabs.FabricaPizza;
+import edu.unisabana.pizzafactory.model.Interfaces.Moldeador;
 
 public class PreparadorPizza {
 
@@ -19,10 +19,10 @@ public class PreparadorPizza {
 
         amasador.amasar();
 
-        if (tam == Tamano.PEQUENA) {
+        if (tam == Tamano.PEQUENO) {
             moldeador.moldearPizzaPequena();
         } 
-        else if (tam == Tamano.MEDIANA) {
+        else if (tam == Tamano.MEDIANO) {
             moldeador.moldearPizzaMediana();
         } 
         else {
