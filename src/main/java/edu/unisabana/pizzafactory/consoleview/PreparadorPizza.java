@@ -20,7 +20,8 @@ public class PreparadorPizza {
         Ingrediente[] ingredientes = new Ingrediente[]{
             new Ingrediente("queso", 1),
             new Ingrediente("jamon", 2)
-        };            
+        };           
+         
 
         PreparadorPizza pp = new PreparadorPizza();
 
