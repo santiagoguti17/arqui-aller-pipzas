@@ -7,8 +7,23 @@ import edu.unisabana.pizzafactory.model.Interfaces.FabricaPizza;
 import edu.unisabana.pizzafactory.model.Interfaces.Amasador;
 import edu.unisabana.pizzafactory.model.Interfaces.Horneador;
 import edu.unisabana.pizzafactory.model.Interfaces.Moldeador;
+import edu.unisabana.pizzafactory.model.Fabricas.FabricaPI;
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
 public class PreparadorPizza {
+
+    public static void main(String args[]){
+        try {
+            Ingrediente[] ingredientes=new Ingrediente[]{new Ingrediente("queso",1),new Ingrediente("jamon",2)};            
+            PreparadorPizza pp=new PreparadorPizza();
+            FabricaPizza fabrica=new FabricaPI();
+            pp.prepararPizza(fabrica,ingredientes, Tamano.MEDIANO);
+        } catch (ExcepcionParametrosInvalidos ex) {
+            Logger.getLogger(PreparadorPizza.class.getName()).log(Level.SEVERE, "Algo ha salido mal en la preparacion de la Pizza", ex);
+        }
+                
+    }
 
     public void prepararPizza(FabricaPizza fabrica, Ingrediente[] ingredientes, Tamano tam)
             throws ExcepcionParametrosInvalidos {
