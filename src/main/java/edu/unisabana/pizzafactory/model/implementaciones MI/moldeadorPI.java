@@ -2,7 +2,7 @@ package edu.unisabana.pizzafactory.model.implementacionesMI;
 
 import edu.unisabana.pizzafactory.model.interfaces.moldeador;
 
-public class moldeadorPI implements moldeador {
+public class MoldeadorPI implements moldeador {
 
     @Override
     public void moldearPizzaMediana() {

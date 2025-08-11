@@ -1,13 +1,12 @@
-package edu.unisabana.pizzafactory.model.interfazdefabricaabs;
 
-import edu.unisabana.pizzafactory.model.interfaces.amasador;
-import edu.unisabana.pizzafactory.model.interfaces.moldeador;
-import edu.unisabana.pizzafactory.model.interfaces.horneador;
+import edu.unisabana.pizzafactory.model.interfaces.Amasador;
+import edu.unisabana.pizzafactory.model.interfaces.Moldeador;
+import edu.unisabana.pizzafactory.model.interfaces.Horneador;
 
-public interface fabricaPizza {
+public interface FabricaPizza {
 
-    amasador crearAmasador();
-    moldeador crearMoldeador();
-    horneador crearHorneador();
+    Amasador crearAmasador();
+    Moldeador crearMoldeador();
+    Horneador crearHorneador();
 
 }

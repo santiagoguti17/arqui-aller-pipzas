@@ -3,19 +3,19 @@ package edu.unisabana.pizzafactory.consoleview;
 import edu.unisabana.pizzafactory.model.ExcepcionParametrosInvalidos;
 import edu.unisabana.pizzafactory.model.Ingrediente;
 import edu.unisabana.pizzafactory.model.Tamano;
-import edu.unisabana.pizzafactory.model.interfaces.amasador;
-import edu.unisabana.pizzafactory.model.interfaces.moldeador;
-import edu.unisabana.pizzafactory.model.interfaces.horneador;
-import edu.unisabana.pizzafactory.model.interfazdefabricaabs.fabricaPizza;
+import edu.unisabana.pizzafactory.model.Interfaces.Amasador;
+import edu.unisabana.pizzafactory.model.Interfaces.Moldeador;
+import edu.unisabana.pizzafactory.model.Interfaces.Horneador;
+import edu.unisabana.pizzafactory.model.Interfazdefabricaabs.FabricaPizza;
 
 public class PreparadorPizza {
 
-    public void prepararPizza(fabricaPizza fabrica, Ingrediente[] ingredientes, Tamano tam)
+    public void prepararPizza(FabricaPizza fabrica, Ingrediente[] ingredientes, Tamano tam)
             throws ExcepcionParametrosInvalidos {
 
-        amasador amasador = fabrica.crearAmasador();
-        moldeador moldeador = fabrica.crearMoldeador();
-        horneador horneador = fabrica.crearHorneador();
+        Amasador amasador = fabrica.crearAmasador();
+        Moldeador moldeador = fabrica.crearMoldeador();
+        Horneador horneador = fabrica.crearHorneador();
 
         amasador.amasar();
 

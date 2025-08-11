@@ -2,7 +2,7 @@ package edu.unisabana.pizzafactory.model.implementacionesMG;
 
 import edu.unisabana.pizzafactory.model.interfaces.horneador;
 
-public class horneadorPG implements horneador {
+public class HorneadorPG implements horneador {
 
     @Override
     public void hornear() {

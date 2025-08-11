@@ -1,5 +1,9 @@
-package edu.unisabana.pizzafactory.model.interfaces;
+package edu.unisabana.pizzafactory.model.Interfaces;
 
-public class moldeador {
-    
+/**
+ * Interfaz para las operaciones de moldeado (soporta tamaños definidos).
+ */
+public interface Moldeador {
+    void moldearPizzaPequena();
+    void moldearPizzaMediana();
 }

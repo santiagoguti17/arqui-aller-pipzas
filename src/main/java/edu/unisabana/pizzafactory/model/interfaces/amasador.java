@@ -1,5 +1,8 @@
-package edu.unisabana.pizzafactory.model.interfaces;
+package edu.unisabana.pizzafactory.model.Interfaces;
 
-public class amasador {
-    
+/**Amasador
+ * Interfaz para los amasadores de distintas variantes de pizza.
+ */
+public interface Amasador {
+    void amasar();
 }
